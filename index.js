@@ -1,6 +1,4 @@
 'use strict';
-const assert = require('assert');
-
 function bitDiffCount(a, b) {
   const bitStr = (a ^ b >>> 0).toString(2);
   return bitStr.split('1').length - 1;
@@ -16,5 +14,3 @@ function hammingDistance(a, b) {
   return out;
 }
 module.exports = exports = hammingDistance;
-
-assert.equal(hammingDistance('this is a test', 'wokka wokka!!!'), 37);
